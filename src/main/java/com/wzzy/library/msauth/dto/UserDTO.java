@@ -10,10 +10,10 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class UserDTO {
 
-    private Long id;
-    private String email;
-    private String role;
-    private Boolean isActive;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+    private Long userIdDTO;
+    private String emailDTO;
+    private String roleDTO;
+    private Boolean isActiveDTO;
+    private LocalDateTime createdAtDTO;
+    private LocalDateTime updatedAtDTO;
 }

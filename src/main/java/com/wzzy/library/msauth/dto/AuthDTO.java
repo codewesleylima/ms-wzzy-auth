@@ -1,21 +1,21 @@
 package com.wzzy.library.msauth.dto;
 
-import jakarta.persistence.Id;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
-@Getter
-@Setter
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class AuthDTO {
 
-    @Id
-    private UUID authenticationId;
-    private String email;
-    private String passwordHash;
-    private String role;
-    private String createdAt;
-    private String updatedAt;
-    private String isActive;
+    private UUID authenticationIdDTO;
+    private String emailDTO;
+    private String passwordHashDTO;
+    private String roleDTO;
+    private String createdAtDTO;
+    private String updatedAtDTO;
+    private String isActiveDTO;
 }
