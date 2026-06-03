@@ -15,23 +15,23 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long userId;
+    private Long userIdEntity;
 
     @Column(nullable = false, unique = true)
-    private String email;
+    private String emailEntity;
 
     @Column(nullable = false)
-    private String passwordHash;
+    private String passwordHashEntity;
 
     @Column(nullable = false)
-    private String role;
+    private String roleEntity;
 
     @Column(nullable = false)
-    private Boolean isActive = true;
+    private Boolean isActiveEntity = true;
 
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime createdAtEntity = LocalDateTime.now();
 
     @Column(nullable = false)
-    private LocalDateTime updatedAt = LocalDateTime.now();
+    private LocalDateTime updatedAtEntity = LocalDateTime.now();
 }

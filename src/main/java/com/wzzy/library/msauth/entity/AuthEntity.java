@@ -17,11 +17,11 @@ import java.util.UUID;
 public class AuthEntity {
 
     @Id
-    private UUID authenticationId;
-    private String email;
-    private String passwordHash;
-    private String role;
-    private String createdAt;
-    private String updatedAt;
-    private String isActive;
+    private UUID authenticationIdEntity;
+    private String emailEntity;
+    private String passwordHashEntity;
+    private String roleEntity;
+    private String createdAtEntity;
+    private String updatedAtEntity;
+    private String isActiveEntity;
 }
